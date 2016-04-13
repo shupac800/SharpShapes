@@ -8,13 +8,21 @@ namespace SharpShapes
 {
     public class Rhombus
     {
-        public double area(double side1)
+        public static double area(double side1)
         {
             return Math.Pow(side1, 2);
         }
-        public double perimeter(double side1)
+        public static double perimeter(double side1)
         {
             return 4 * side1;
+        }
+        public static void inputAndCompute()
+        {
+            Console.WriteLine("Enter side");
+            var side = Int32.Parse(Console.ReadLine());
+
+            Console.WriteLine("Area is {0}", area(side));
+            Console.WriteLine("Perimeter is {0}", perimeter(side));
         }
     }
 }
