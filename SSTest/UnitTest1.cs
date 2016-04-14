@@ -42,5 +42,13 @@ namespace SSTest
             Assert.AreEqual(24, Cube.area(2));
             Assert.AreEqual(8, Cube.volume(2));
         }
+
+        [TestMethod]
+        public void SphereTest()
+        {
+            double radius = 6.6017;
+            Assert.AreEqual((4 / 3) * Sphere.pi * Math.Pow(radius, 3), Sphere.volume(radius));
+            Assert.AreEqual(4 * Sphere.pi * Math.Pow(radius, 2), Sphere.area(radius));
+        }
     }
 }

@@ -17,16 +17,5 @@ namespace SharpShapes
         {
             return (2 * pi * radius * height) + 2 * pi * Math.Pow(radius, 2);
         }
-        public static void inputAndCompute()
-        {
-            Console.WriteLine("Enter radius, height");
-            string values = Console.ReadLine();
-            string[] arguments = values.Split(',');
-            double radius = Int32.Parse(arguments[0]);
-            double height = Int32.Parse(arguments[1]);
-
-            Console.WriteLine("Area is {0}", area(radius, height));
-            Console.WriteLine("Volume is {0}", volume(radius, height));
-        }
     }
 }

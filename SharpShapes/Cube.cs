@@ -16,12 +16,5 @@ namespace SharpShapes
         {
             return 6 * Math.Pow(side, 2);
         }
-        public static void inputAndCompute()
-        {
-            Console.WriteLine("Enter side");
-            var side = Int32.Parse(Console.ReadLine());
-            Console.WriteLine("Area is {0}", area(side));
-            Console.WriteLine("Volume is {0}", volume(side));
-        }
     }
 }

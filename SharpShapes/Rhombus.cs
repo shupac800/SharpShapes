@@ -16,13 +16,5 @@ namespace SharpShapes
         {
             return 4 * side1;
         }
-        public static void inputAndCompute()
-        {
-            Console.WriteLine("Enter side");
-            var side = Int32.Parse(Console.ReadLine());
-
-            Console.WriteLine("Area is {0}", area(side));
-            Console.WriteLine("Perimeter is {0}", perimeter(side));
-        }
     }
 }
