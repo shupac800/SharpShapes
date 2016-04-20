@@ -13,7 +13,7 @@ namespace SharpShapes
         {
             return Math.Pow(radius, 2) * pi;
         }
-        public static double diameter(double radius)
+        public static double circumference(double radius)
         {
             return 2 * pi * radius;
         }

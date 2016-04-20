@@ -28,7 +28,7 @@ namespace SharpShapes
                     Console.WriteLine("Enter radius");
                     var circle_radius = double.Parse(Console.ReadLine());
                     Console.WriteLine("Area is {0}", Circle.area(circle_radius));
-                    Console.WriteLine("Diameter is {0}", Circle.diameter(circle_radius));
+                    Console.WriteLine("Circumference is {0}", Circle.circumference(circle_radius));
                     break;
                 case 1:
                     // square
