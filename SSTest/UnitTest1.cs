@@ -12,7 +12,7 @@ namespace SSTest
         {
             double radius = 1;
             Assert.AreEqual(Circle.pi, Circle.area(radius));
-            Assert.AreEqual(Circle.pi * 2 * radius, Circle.diameter(radius));
+            Assert.AreEqual(Circle.pi * 2 * radius, Circle.circumference(radius));
         }
 
         [TestMethod]
